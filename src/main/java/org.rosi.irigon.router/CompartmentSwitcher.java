@@ -2,9 +2,9 @@ package org.rosi.irigon.router;
 
 public class CompartmentSwitcher {
 
-    final ScheduledCompartment scheduledCompartment = new ScheduledCompartment();
-    final PredictiveCompartment predictiveCompartment = new PredictiveCompartment();
-    final NaiveCompartment naiveCompartment = new NaiveCompartment();
+    ScheduledCompartment scheduledCompartment = new ScheduledCompartment();
+    PredictiveCompartment predictiveCompartment = new PredictiveCompartment();
+    NaiveCompartment naiveCompartment = new NaiveCompartment();
 
     public AbstractCompartment activate(AbstractRouter ar, String ctxt) {
         switch (ctxt){
